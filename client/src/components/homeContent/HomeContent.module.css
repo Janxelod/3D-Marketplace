@@ -1,0 +1,17 @@
+.home {
+   display: flex;
+   width: 70rem;
+   align-items: center;
+   justify-content: space-between;
+   margin: auto;
+   margin-top: 2rem;
+}
+
+.content {
+   width: 60%;
+}
+ 
+ .home-img{
+   width: 65%;
+   height: 65%;
+ }

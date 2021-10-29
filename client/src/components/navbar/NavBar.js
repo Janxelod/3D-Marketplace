@@ -1,8 +1,7 @@
-
 import Button from "../ui/Button";
+import SearchBar from "./searchbar/SearchBar";
 
 import classes from "./NavBar.module.css";
-import SearchBar from "./searchbar/SearchBar";
 
 const NavBar = () => {
 

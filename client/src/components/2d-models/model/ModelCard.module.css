@@ -1,0 +1,50 @@
+.main{
+   background-color: white;
+   border-radius: 6px;
+}
+
+.main img{
+   height: 100%;
+   width: 100%;
+}
+
+.footer{
+   display: flex;
+   height: 36px;
+   align-items: center;
+}
+
+.footer .left{
+   min-width: 0;
+   margin-right: 5px;
+   display: flex;
+   align-items: center;
+   flex: 1;
+}
+
+.footer .left .title{
+   max-width: 100%;
+   font-size: 11px;
+   margin:0;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+
+.footer .right{
+   min-width: 35px;
+   display: flex;
+   align-items: center;
+}
+
+.count{
+   font-size: 12px;
+   margin-right: 5px;
+}
+
+.footer .userAvatar > img{
+   width: 15px;
+   height: 15px;
+   margin-right: 6px;
+}
