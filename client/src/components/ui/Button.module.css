@@ -1,0 +1,15 @@
+.button {
+   background-color: orange;
+   color: #000000;
+ }
+ 
+ .button span {
+   margin: 0 0.5rem;
+ }
+
+.button:hover,
+.button:active {
+   background-color: black;
+   color: orange;
+   font-weight: bolder;
+}
