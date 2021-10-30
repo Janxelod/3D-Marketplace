@@ -1,5 +1,9 @@
 import ModelCard from "./model/ModelCard";
 import imagePlaceHolder from "../../assets/imagePlaceholder.PNG";
+import imagePlaceHolder2 from "../../assets/imagePlaceholder2.PNG";
+import imagePlaceHolder3 from "../../assets/imagePlaceholder3.PNG";
+import imagePlaceHolder4 from "../../assets/imagePlaceholder4.PNG";
+import imagePlaceHolder5 from "../../assets/imagePlaceholder5.PNG";
 
 import classes from "./ModelCardsContainer.module.css";
 
@@ -14,8 +18,8 @@ const DummyData = [
       user: "YusukeJoan"
    },
    {
-      imageSrc: imagePlaceHolder,
-      userImageSrc: imagePlaceHolder,
+      imageSrc: imagePlaceHolder2,
+      userImageSrc: imagePlaceHolder2,
       modelTitle: "Crazy Snowball running and jumping",
       viewsCount: 55,
       commentsCount: 5,
@@ -23,8 +27,8 @@ const DummyData = [
       user: "YusukeJoan"
    },
    {
-      imageSrc: imagePlaceHolder,
-      userImageSrc: imagePlaceHolder,
+      imageSrc: imagePlaceHolder3,
+      userImageSrc: imagePlaceHolder3,
       modelTitle: "Crazy Snowball barking",
       viewsCount: 0,
       commentsCount: 0,
@@ -32,8 +36,8 @@ const DummyData = [
       user: "YusukeJoan"
    },
    {
-      imageSrc: imagePlaceHolder,
-      userImageSrc: imagePlaceHolder,
+      imageSrc: imagePlaceHolder4,
+      userImageSrc: imagePlaceHolder4,
       modelTitle: "o.O this is not Snowball?",
       viewsCount: 44,
       commentsCount: 0,
@@ -41,8 +45,8 @@ const DummyData = [
       user: "YusukeJoan"
    },
    {
-      imageSrc: imagePlaceHolder,
-      userImageSrc: imagePlaceHolder,
+      imageSrc: imagePlaceHolder5,
+      userImageSrc: imagePlaceHolder5,
       modelTitle: "Snowball test",
       viewsCount: 7,
       commentsCount: 2,

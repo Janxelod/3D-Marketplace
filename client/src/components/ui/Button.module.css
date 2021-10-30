@@ -1,6 +1,8 @@
 .button {
-   background-color: orange;
-   color: #000000;
+   background: black;
+   color: white;
+   border-radius: 2px;
+   min-width: 105px;
  }
  
  .button span {
@@ -9,7 +11,6 @@
 
 .button:hover,
 .button:active {
-   background-color: black;
-   color: orange;
+   background: linear-gradient(103deg,#6157ff,#7067ff,#6157ff);
    font-weight: bolder;
 }
