@@ -1,23 +1,25 @@
 .main{
-   background: linear-gradient(
-      to right bottom,
-      rgba(97, 87, 255, 0.7),
-      rgba(97, 87, 255, 0.3)
-   );
+   background: black;
    border-radius: 3px;
 }
 
 .main img{
-   height: 100%;
+   height: 240px;
    width: 100%;
+   object-fit: contain;
 }
 
 .footer{
    display: flex;
    height: 36px;
    align-items: center;
-   margin: 5px;
+   padding: 5px;
    color: #fff1f1;
+   background: linear-gradient(
+      to right bottom,
+      rgba(97, 87, 255, 0.7),
+      rgba(97, 87, 255, 0.3)
+   );
 }
 
 .footer .left{
