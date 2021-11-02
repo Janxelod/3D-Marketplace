@@ -1,11 +1,11 @@
 .input {
    display: flex;
    align-items: center;
-   margin-bottom: 0.5rem;
  }
  
  .input input {
-   width: 50rem;
+   /* width: 50rem; */
+   width: 100%;
    border-radius: 5px;
    border: 1px solid #ccc;
    font: inherit;
