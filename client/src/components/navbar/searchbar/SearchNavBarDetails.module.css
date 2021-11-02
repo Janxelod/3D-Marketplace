@@ -1,0 +1,17 @@
+.searchNavBarDetails {
+   width: 80%;
+   margin: 0;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   gap: 10px;
+}
+
+.item{
+   flex-grow: 1;
+   max-width: 300px;
+   color: white;
+   align-items: center;
+}
