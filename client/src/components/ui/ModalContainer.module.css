@@ -1,0 +1,49 @@
+.backdrop {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 100;
+   background: rgba(0, 0, 0, 0.7);
+ }
+
+ .modalContainerParent{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .modalContainer {
+   position: fixed;
+   width: 400px;
+   top: 15vh;
+   z-index: 110;
+   overflow: hidden;
+   background-color: #adabe9;
+   border-radius: 5px;
+   margin: 15px;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .header {
+   background: black;
+   padding: 1rem;
+   flex-grow: 1;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+ }
+ 
+ .header h2 {
+   margin: 0;
+   color: white;
+ }
+ 
+ .content {
+   padding: 1rem;
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+ }

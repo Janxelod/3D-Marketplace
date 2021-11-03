@@ -1,0 +1,25 @@
+
+.authButton {
+   height: 42px;
+   border-radius: 4px;
+}
+
+.authParagraph {
+   text-align: center;
+   font-style: italic;
+}
+
+.authParagraph span{
+   cursor: pointer;
+   font-weight: bold;
+   font-style: normal;
+}
+
+.authParagraph span:active,
+.authParagraph span:hover{
+   text-decoration: underline;
+   cursor: pointer;
+   font-weight: bold;
+   font-style: normal;
+   color: #6157ff;
+}
