@@ -1,0 +1,29 @@
+.metadataStats {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   color: white;
+   font-weight: bold;
+   column-gap: 20px;
+}
+
+.metadataStats span {
+   color:thistle;
+   font-size: 14px;
+   font-weight: none;
+}
+
+.metadataInfo {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   flex-grow: 2;
+   
+}
+
+.metadataInfo div {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+}
+

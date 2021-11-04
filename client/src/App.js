@@ -1,19 +1,45 @@
-import React from "react";
+import React, { useRef }  from "react";
 import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 
+import HomePage from "./pages/Home/HomePage";
+import ModelPage from "./pages/Models/ModelPage";
 import SearchPage from "./pages/Search/SearchPage";
-import Home from "./pages/Home/Home";
+import NavBar from "./components/navbar/NavBar";
+import AuthStateManager from "./components/auth/AuthStateManager";
 
 const App = () => {
+   const authStateRef = useRef();
+
+   const closeAuth = () => {
+      authStateRef.current.closeAuth();
+   };
+
+   const openLogin = () => {
+      authStateRef.current.openLogin();
+   };
+
+   const openSignUp = () => {
+      authStateRef.current.openSignUp();
+   };
+
    return (
       <React.Fragment>
          <Router>
+            <AuthStateManager ref ={authStateRef}/>
+            <NavBar
+               OnOpenLogin={openLogin}
+               OnOpenSignUp={openSignUp}
+               OnCloseAuth={closeAuth}
+            />
             <Switch>
                <Route path="/" exact>
-                  <Home />
+                  <HomePage />
                </Route>
                <Route path="/search" exact>
                   <SearchPage/>
+               </Route>
+               <Route path="/models">
+                  <ModelPage/>
                </Route>
                <Redirect to="/" />
             </Switch>

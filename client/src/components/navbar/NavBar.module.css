@@ -1,6 +1,7 @@
 .navbar {
    width: 100%;
    height: 5rem;
+   margin: 0;
    background-color: #080808;
    position: sticky;
    top: 0;

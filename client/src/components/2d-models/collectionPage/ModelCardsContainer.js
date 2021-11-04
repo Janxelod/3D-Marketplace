@@ -1,9 +1,10 @@
 import ModelCard from "./model/ModelCard";
-import imagePlaceHolder from "../../assets/imagePlaceholder.PNG";
-import imagePlaceHolder2 from "../../assets/imagePlaceholder2.PNG";
-import imagePlaceHolder3 from "../../assets/imagePlaceholder3.PNG";
-import imagePlaceHolder4 from "../../assets/imagePlaceholder4.PNG";
-import imagePlaceHolder5 from "../../assets/imagePlaceholder5.PNG";
+
+import imagePlaceHolder from "../../../assets/imagePlaceholder.PNG";
+import imagePlaceHolder2 from "../../../assets/imagePlaceholder2.PNG";
+import imagePlaceHolder3 from "../../../assets/imagePlaceholder3.PNG";
+import imagePlaceHolder4 from "../../../assets/imagePlaceholder4.PNG";
+import imagePlaceHolder5 from "../../../assets/imagePlaceholder5.PNG";
 
 import classes from "./ModelCardsContainer.module.css";
 

@@ -1,5 +1,6 @@
 import { Eye, Star, MessageSquare} from "react-feather";
-import Card from "../../ui/Card";
+
+import Card from "../../../ui/Card";
 
 import classes from "./ModelCard.module.css";
 

@@ -1,0 +1,36 @@
+.headerWrapper {
+   text-align: center;
+}
+
+.downloadButton{
+   margin:0 25%;
+   padding: 10px 0;
+   font-size: 25px;
+   border-style: solid;
+   border-color: #6157ff;
+   border-radius: 4px;
+}
+
+.ownerWrapper {
+   display: flex;
+   justify-content: space-between;
+   color: white;
+   font-weight: bold;
+}
+
+.ownerWrapper span {
+   color:thistle;
+   font-size: 14px;
+   font-weight: none;
+   margin-right: 5px;
+}
+
+.owner {
+   align-self: flex-start;
+}
+
+.stats {
+   align-self: flex-end;
+   display: flex;
+   gap: 15px
+}
