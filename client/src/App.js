@@ -26,11 +26,13 @@ const App = () => {
       <React.Fragment>
          <Router>
             <AuthStateManager ref ={authStateRef}/>
-            <NavBar
-               OnOpenLogin={openLogin}
-               OnOpenSignUp={openSignUp}
-               OnCloseAuth={closeAuth}
-            />
+            <Route path={['/', '/models']} exact>
+               <NavBar
+                  OnOpenLogin={openLogin}
+                  OnOpenSignUp={openSignUp}
+                  OnCloseAuth={closeAuth}
+               />
+            </Route>
             <Switch>
                <Route path="/" exact>
                   <HomePage />
