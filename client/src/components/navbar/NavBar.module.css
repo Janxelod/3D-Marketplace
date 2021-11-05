@@ -2,7 +2,7 @@
    width: 100%;
    height: 5rem;
    margin: 0;
-   background-color: #080808;
+   background-color: transparent;
    position: sticky;
    top: 0;
    display: flex;
@@ -10,6 +10,15 @@
    align-items: center;
    z-index: 50;
    flex-wrap: wrap;
+
+   transition: background-color, border-bottom-color .25s, .25s ease-out ;
+}
+
+.scrolledNavbar {
+   background-color: black;
+   border-bottom: 1px solid;
+   border-bottom-color: rgba(255, 255, 255, 0.25);
+   transition: background-color, border-bottom-color .25s, .25s ease-in ;
 }
 
 .navbar ul li h1 {

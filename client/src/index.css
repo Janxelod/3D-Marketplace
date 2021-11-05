@@ -10,11 +10,7 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(
-      to top right,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.85)
-   );
+  background: #1e1e1e;
    min-height: 1080px;
    background-repeat: no-repeat;
    background-attachment: fixed;
