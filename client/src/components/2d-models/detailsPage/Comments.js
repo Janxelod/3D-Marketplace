@@ -5,7 +5,7 @@ import classes from "./Comments.module.css";
 const Comments = ({ comments }) => {
    const commentsResult = comments.map((comment) => {
       return (
-         <div className={classes.comment}>
+         <div key={comment.id} className={classes.comment}>
             <div className={classes.commentUser}>
                {`User: ${comment.userId}`}
                <span>{getFormatedDate(comment.publishDate)}</span>

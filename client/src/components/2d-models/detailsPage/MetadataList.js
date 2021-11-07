@@ -8,7 +8,7 @@ const MetadataList = ({ publishDate, tags, categories }) => {
       return (
          <ul className={classes.categoriesList}>
             {categories.map((category) => {
-               return <li className={classes.categoryItem}>{category}</li>;
+               return <li key={category} className={classes.categoryItem}>{category}</li>;
             })}
          </ul>
       );
@@ -19,7 +19,7 @@ const MetadataList = ({ publishDate, tags, categories }) => {
       return (
          <ul className={classes.tagsList}>
             {tagsList.map((tag) => {
-               return <li className={classes.tagItem}>{tag}</li>;
+               return <li key={tag} className={classes.tagItem}>{tag}</li>;
             })}
          </ul>
       );

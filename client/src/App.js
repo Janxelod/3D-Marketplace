@@ -26,7 +26,7 @@ const App = () => {
       <React.Fragment>
          <Router>
             <AuthStateManager ref ={authStateRef}/>
-            <Route path={['/', '/models']} exact>
+            <Route path={['/', '/models/:modelId', '/models']} exact>
                <NavBar
                   OnOpenLogin={openLogin}
                   OnOpenSignUp={openSignUp}
@@ -40,7 +40,10 @@ const App = () => {
                <Route path="/search" exact>
                   <SearchPage/>
                </Route>
-               <Route path="/models">
+               <Route path="/models" exact>
+                  <ModelPage/>
+               </Route>
+               <Route path="/models/:modelId">
                   <ModelPage/>
                </Route>
                <Redirect to="/" />
