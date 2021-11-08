@@ -1,12 +1,16 @@
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+
 import Button from "../ui/Button";
 import SearchBar from "./searchbar/SearchBar";
+import SearchNavBarDetails from "./searchbar/SearchNavBarDetails";
 
 import classes from "./NavBar.module.css";
-import SearchNavBarDetails from "./searchbar/SearchNavBarDetails";
-import React from "react";
-import { Link } from "react-router-dom";
 
 const SearchNavBar = () => {
+   const location = useLocation();
+   const { from } = location.state;
+
    return (
       <React.Fragment>
          <header className={classes.navbar}>
@@ -18,10 +22,12 @@ const SearchNavBar = () => {
                   <SearchBar />
                </li>
                <li>
-                 <Link to="/"> <Button name="CANCEL"/></Link>
+                  <Link to={from}>
+                     <Button name="CANCEL"/>
+                  </Link>
                </li>
             </ul>
-         <SearchNavBarDetails />
+            <SearchNavBarDetails />
          </header>
       </React.Fragment>
    );
