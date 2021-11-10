@@ -24,7 +24,7 @@ const useInput = (validateValue, isRequired = false) => {
       initialInputState
    );
 
-   const valueIsValid = validateValue(inputState.value);
+   const valueIsValid = validateValue == undefined || validateValue(inputState.value);
    const hasError = !valueIsValid && inputState.isTouched;
 
    const valueIsEmpty = isRequired && inputState.value.trim() === "";

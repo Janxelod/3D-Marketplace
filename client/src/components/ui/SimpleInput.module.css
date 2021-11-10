@@ -1,5 +1,7 @@
 .form-control {
    margin-bottom: 1rem;
+   display: flex;
+   flex-direction: column;
  }
  
  .form-control input,
@@ -9,7 +11,6 @@
  
  .form-control label {
    font-weight: bold;
-   margin-bottom: 0.5rem;
  }
  
  .form-control input,
@@ -19,6 +20,10 @@
    border-radius: 4px;
    border: 1px solid #ccc;
    min-width: 23rem;
+ }
+
+ .form-control textarea {
+    resize: none;
  }
  
  .form-control input:focus {
@@ -39,4 +44,5 @@
 
 .error-text {
    color: #b40e0e;
+   margin: 5px 0 0;
  }

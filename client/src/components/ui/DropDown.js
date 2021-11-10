@@ -1,5 +1,4 @@
-import React, { useImperativeHandle } from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useImperativeHandle, useState } from "react";
 
 import classes from "./DropDown.module.css";
 
@@ -19,7 +18,8 @@ const DropDown = React.forwardRef(
 
       useImperativeHandle(ref, ()=> {
          return {
-            reset: resetToDefaultValue
+            reset: resetToDefaultValue,
+            selection: currentSelection
          }
       });
 
