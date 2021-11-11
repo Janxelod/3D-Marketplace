@@ -1,0 +1,144 @@
+.modelUploadPageStep2 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   max-width: 70%;
+   margin: auto;
+   gap: 30px;
+}
+
+.modelUploadPageStep2 label {
+   font-weight: bold;
+   color: white;
+}
+
+.modelPreviewContainer {
+   display: flex;
+   flex-direction: column;
+   width: 256px;
+   gap: 20px;
+}
+
+.modelPreview {
+   background-color: rgb(85, 84, 84);
+   color: white;
+   height: fit-content;
+   border-color: rgb(20, 20, 20);
+   border-style: solid;
+   border-radius: 8px;
+}
+
+.modelPreview .imgPreview {
+   max-width: 250px;
+   max-height: 360px;
+   margin: auto;
+   display: block;
+   padding: 5px;
+}
+
+.modelPreview p {
+   padding: 0 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.modelPreviewContainer button {
+   width: 128px;
+   margin: 0 auto;
+}
+
+.modelFormDetails {
+   display: flex;
+   flex-direction: column;
+   min-width: 512px;
+   max-width: 600px;
+}
+
+.rmsc {
+   --rmsc-main: #4285f4 !important;
+   --rmsc-hover: #392bfd !important;
+   --rmsc-selected: #392bfd !important;
+   --rmsc-border: #6157ff !important;
+   --rmsc-gray: black !important;
+   --rmsc-bg: #6157ff !important;
+   --rmsc-p: 10px; /* Spacing */
+   --rmsc-radius: 4px; /* Radius */
+   --rmsc-h: 38px; /* Height */
+   margin-bottom: 1rem;
+}
+
+.modelPropertiesSide {
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(85, 84, 84);
+   color: white;
+   max-width: 256px;
+   gap: 15px;
+   padding: 15px;
+   height: fit-content;
+
+   border-color: rgb(20, 20, 20);
+   border-style: solid;
+   border-radius: 8px;
+}
+
+.description {
+   border-style: dashed;
+   border-color: rgb(197, 194, 194);
+   padding: 5px;
+   font-size: 13px;
+}
+
+.item {
+   width: 420px;
+   color: white;
+   padding-bottom: 0px;
+}
+
+.item > select {
+   margin-bottom: 0px;
+}
+
+.downloadOption {
+   display: flex;
+   flex-direction: column;
+}
+
+.downloadOption label {
+   font-size: 13px;
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 70%;
+   margin: 20px auto;
+   gap: 20px;
+}
+
+
+.footer hr{
+   border: 0;
+   height: 2px;
+   width: 100%;
+   background-color: rgb(66, 66, 66);
+}
+
+.footerButtons {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   gap:10px;
+}
+
+.footerButtons .deleteButton {
+   color:red;
+}
+
+.footerButtons .deleteButton:active,
+.footerButtons .deleteButton:hover {
+   color:red;
+   background: #9891fa;
+}

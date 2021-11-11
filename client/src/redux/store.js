@@ -1,11 +1,13 @@
 import {configureStore, combineReducers} from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
 
-import { watcherSaga } from "./sagas/rootSaga.js";
-import modelReducer from "./slices/model-slice.js";
+import { watcherSaga } from "./sagas/rootSaga";
+import modelReducer from "./slices/model-slice";
+import newModelReducer from "./slices/newModel-slice";
 
 const reducer = combineReducers({
-   model: modelReducer
+   model: modelReducer,
+   newModel: newModelReducer
 });
 
 const sagaMiddleware = createSagaMiddleware();

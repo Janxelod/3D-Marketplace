@@ -1,0 +1,15 @@
+.deleteModelContent p span {
+   font-weight: bold;
+}
+
+.footerDeleteModel {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   gap: 10px;
+   margin-top: 20px;
+}
+
+.deleteButton {
+   color:red;
+}

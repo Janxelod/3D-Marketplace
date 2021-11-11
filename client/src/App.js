@@ -6,6 +6,7 @@ import ModelPage from "./pages/Models/ModelPage";
 import SearchPage from "./pages/Search/SearchPage";
 import NavBar from "./components/navbar/NavBar";
 import AuthStateManager from "./components/auth/AuthStateManager";
+import ModelUploadPage from "./pages/Models/Upload/ModelUploadPage";
 
 const App = () => {
    const authStateRef = useRef();
@@ -42,6 +43,9 @@ const App = () => {
                </Route>
                <Route path="/models" exact>
                   <ModelPage/>
+               </Route>
+               <Route path="/models/upload" exact>
+                  <ModelUploadPage/>
                </Route>
                <Route path="/models/:modelId">
                   <ModelPage/>

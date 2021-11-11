@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import {useEffect, useRef} from "react";
+import {Link, useLocation} from "react-router-dom";
 
 import Button from "../ui/Button";
 import SearchBar from "./searchbar/SearchBar";
@@ -7,10 +7,10 @@ import useReferredState from "../../hooks/useReferedState";
 
 import classes from "./NavBar.module.css";
 
-const NavBar = ({ OnOpenLogin, OnOpenSignUp }) => {
+const NavBar = ({OnOpenLogin, OnOpenSignUp}) => {
    const [startedScrolling, setStartedScrolling] = useReferredState(false);
    const headerRef = useRef();
-   const { pathname } = useLocation();
+   const {pathname} = useLocation();
 
    const onScrollHandler = () => {
       if (!startedScrolling.current) {
@@ -39,7 +39,7 @@ const NavBar = ({ OnOpenLogin, OnOpenSignUp }) => {
                <Button name="EXPLORE" />
             </li>
             <li className={classes.searchbar}>
-               <Link to={{ pathname: "/search", state: { from: pathname } }} >
+               <Link to={{pathname: "/search", state: {from: pathname}}}>
                   <SearchBar />
                </Link>
             </li>
@@ -50,7 +50,9 @@ const NavBar = ({ OnOpenLogin, OnOpenSignUp }) => {
                <Button name="SIGN UP" onClick={OnOpenSignUp} />
             </li>
             <li>
-               <Button name="UPLOAD" />
+               <Link to={{pathname: "/models/upload", state: {from: pathname}}}>
+                  <Button name="UPLOAD" />
+               </Link>
             </li>
          </ul>
       </header>

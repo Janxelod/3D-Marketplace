@@ -1,0 +1,46 @@
+.modelUploadPageStep1 {
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   max-width: fit-content;
+   text-align: center;
+   gap: 15px;
+}
+
+.modelUploadPageStep1 > h1 {
+   color: white;
+}
+
+.modelUploadPageStep1 > div:hover {
+   cursor: pointer;
+}
+
+.dragZoneParent {
+   background-color: #adabe9;
+   border-style: dashed;
+   border-color: whitesmoke;
+   padding: 15px;
+   width: 700px;
+   height: 400px;
+}
+
+.dragZoneParent img {
+   width: 650px;
+}
+
+.imgPreview {
+   max-width: 650px;
+   max-height: 285px;
+   object-fit: contain;
+}
+
+.footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: stretch;
+}
+
+.footer .btn {
+   color: red !important;
+}

@@ -24,7 +24,7 @@ const useInput = (validateValue, isRequired = false) => {
       initialInputState
    );
 
-   const valueIsValid = validateValue == undefined || validateValue(inputState.value);
+   const valueIsValid = validateValue === undefined || validateValue(inputState.value);
    const hasError = !valueIsValid && inputState.isTouched;
 
    const valueIsEmpty = isRequired && inputState.value.trim() === "";
@@ -42,6 +42,10 @@ const useInput = (validateValue, isRequired = false) => {
       dispatch({ type: "RESET" });
    };
 
+   const setNewValue = (newValue) => {
+      dispatch({type: "INPUT", value: newValue});
+   }
+
    return {
       value: inputState.value,
       isValid: valueIsValid,
@@ -49,6 +53,7 @@ const useInput = (validateValue, isRequired = false) => {
       isEmpty,
       valueChangeHandler,
       inputBlurHandler,
+      setNewValue,
       reset,
    };
 };

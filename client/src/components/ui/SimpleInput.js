@@ -21,6 +21,7 @@ const SimpleInput = React.forwardRef((props, ref) => {
       isEmpty,
       valueChangeHandler,
       inputBlurHandler,
+      setNewValue,
       reset,
    } = useInput(validation, isRequired);
 
@@ -28,11 +29,16 @@ const SimpleInput = React.forwardRef((props, ref) => {
       hasError || isEmpty ? "invalid" : ""
    }`;
 
+   const setValue = (newValue) => {
+      setNewValue(newValue);
+   };
+
    useImperativeHandle(ref, () => {
       return {
          isValid,
          reset,
-         value
+         value,
+         setValue
       };
    });
 
