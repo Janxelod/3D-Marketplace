@@ -15,25 +15,35 @@ const NavBar = ({OnOpenLogin, OnOpenSignUp}) => {
    const onScrollHandler = () => {
       if (!startedScrolling.current) {
          setStartedScrolling(true);
-         headerRef.current.className = `${classes.navbar} ${classes.scrolledNavbar}`;
+         if(headerRef.current)
+         {
+            headerRef.current.className = `${classes.navbar} ${classes.scrolledNavbar}`;
+         }
       }
 
       if (window.scrollY === 0) {
          setStartedScrolling(false);
-         headerRef.current.className = `${classes.navbar}`;
+         if(headerRef.current)
+         {
+            headerRef.current.className = `${classes.navbar}`;
+         }
       }
    };
 
    useEffect(() => {
       window.addEventListener("scroll", onScrollHandler);
-      return () => window.removeEventListener("scroll", onScrollHandler);
+      return () => {
+         window.removeEventListener("scroll", onScrollHandler);
+      };
    }, []);
 
    return (
       <header className={classes.navbar} ref={headerRef}>
          <ul>
-            <li>
-               <h1>BocetoLab</h1>
+            <li className={classes.h1Link}>
+               <Link to="/">
+                  <h1>BocetoLab</h1>
+               </Link>
             </li>
             <li>
                <Button name="EXPLORE" />

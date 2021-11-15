@@ -21,8 +21,12 @@
    transition: background-color, border-bottom-color .25s, .25s ease-in ;
 }
 
-.navbar ul li h1 {
-   color: #d7d7d7;
+.h1Link a:visited,
+.h1Link a:hover,
+.h1Link a:active,
+.h1Link a:link {
+   color: #d7d7d7 !important;
+   text-decoration: none !important;
 }
 
 .navbar ul {
