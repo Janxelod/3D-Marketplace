@@ -1,6 +1,7 @@
 .home {
    display: flex;
-   width: 70rem;
+   flex-direction: row;
+   width: 80%;
    align-items: center;
    justify-content: space-between;
    margin: auto;
@@ -15,4 +16,31 @@
  .home-img{
    width: 65%;
    height: 65%;
+   display: block;
+   margin: auto;
  }
+
+ @media (min-width: 1100px){
+   .content {
+      width: 60%;
+      color: whitesmoke;
+   }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+   .home {
+      flex-direction: column;
+      width: 100%;
+   }
+}
+
+@media (max-width: 800px) {
+   .home {
+      flex-direction: column;
+      width: 100%;
+   }
+   .content {
+      width: 70%;
+      color: whitesmoke;
+   }
+}

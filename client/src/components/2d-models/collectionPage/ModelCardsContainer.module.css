@@ -9,6 +9,7 @@
    padding: 0;
    margin: auto;
    list-style-type: none;
+   justify-content: space-between;
 }
 
 .cardsContainer ul li {
@@ -24,7 +25,7 @@
    }
 
    .cardsContainer ul li{
-      width: calc(25% - 23px);
+      width: calc(25% - 15px);
       margin: 0 5px 10px;
       flex: none;
    }
@@ -39,7 +40,7 @@
    }
 
    .cardsContainer ul li{
-      width: calc(25% - 23px);
+      width: calc(25% - 15px);
       margin: 0 5px 10px;
       flex: none;
    }
@@ -54,7 +55,7 @@
    }
 
    .cardsContainer ul li{
-      width: calc(33% - 23px);
+      width: calc(33% - 15px);
       margin: 0 5px 10px;
       flex: none;
    }
@@ -69,7 +70,7 @@
    }
 
    .cardsContainer ul li{
-      width: calc(50% - 23px);
+      width: calc(50% - 15px);
       margin: 0 5px 10px;
       flex: none;
    }
