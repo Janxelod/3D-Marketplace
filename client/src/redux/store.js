@@ -4,10 +4,14 @@ import createSagaMiddleware from "redux-saga";
 import { watcherSaga } from "./sagas/rootSaga";
 import modelReducer from "./slices/model-slice";
 import newModelReducer from "./slices/newModel-slice";
+import userReducer from "./slices/user-slice";
+import modelsReducer from "./slices/models-slice";
 
 const reducer = combineReducers({
    model: modelReducer,
-   newModel: newModelReducer
+   newModel: newModelReducer,
+   user: userReducer,
+   models: modelsReducer
 });
 
 const sagaMiddleware = createSagaMiddleware();

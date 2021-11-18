@@ -8,10 +8,10 @@ export function* handleGetModel2D({payload}) {
       const modelResponse = yield call(requestGetModel2D, payload.id);
       const modelCommentsResponse = yield call(requestGetModelComments, payload.id);
       
-      const {data: dataModel} = modelResponse;
-      const {data: dataComments} = modelCommentsResponse;
+      const {data: modelData} = modelResponse;
+      const {data: commentsData} = modelCommentsResponse;
 
-      yield put(setModel({...dataModel, comments: dataComments}));
+      yield put(setModel({...modelData, comments: commentsData}));
    } catch (error) {
       console.log(error);
    }
