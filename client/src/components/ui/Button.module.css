@@ -14,3 +14,7 @@
    background: linear-gradient(103deg,#6157ff,#7067ff,#6157ff);
    font-weight: bolder;
 }
+
+.selected {
+   background: linear-gradient(103deg,#6157ff,#7067ff,#6157ff) !important;
+}
