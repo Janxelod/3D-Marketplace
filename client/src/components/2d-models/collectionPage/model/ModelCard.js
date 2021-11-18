@@ -6,33 +6,33 @@ import classes from "./ModelCard.module.css";
 
 const ModelCard = (props) => {
    return (
-      <Card className={classes.main}>
-         <div>
-            <img alt={props.modelTitle} src={props.imageSrc} />
+      <Card>
+         <div className={classes.main}>
+            <img alt={props.title} src={props.sourcefile} />
          </div>
          <div className={classes.footer}>
             <div className={classes.left}>
                <a href="#" className={classes.userAvatar}>
-                  <img alt={props.user} src={props.userImageSrc} />
+                  <img alt={props.userId} src={props.sourcefile} />
                </a>
                <div className={classes.title}>
                   <p>
-                     <a>{props.modelTitle}</a>
+                     <a>{props.title}</a>
                   </p>
                </div>
             </div>
             <div className={classes.right}>
                <span className={classes.count}>
                   <Eye size="12"/>
-                  <span >{props.viewsCount}</span>
+                  <span >{props.views}</span>
                </span>
                <span className={classes.count}>
                   <MessageSquare size="12"/>
-                  <span >{props.commentsCount}</span>
+                  <span >{props.comments || 0}</span>
                </span>
                <span className={classes.count}>
                   <Star size="12"/>
-                  <span>{props.likesCount}</span>
+                  <span>{props.userLikes.split("-").length}</span>
                </span>
             </div>
          </div>
