@@ -1,0 +1,66 @@
+.userSummary {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   gap: 25px;
+   margin-top: 15px;
+}
+
+.contentBox {
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+}
+
+.boxResume {
+   width: 80%;
+}
+
+.boxStats {
+   width: 20%;
+   color:thistle;
+   font-size: 14px;
+   font-weight: none;
+}
+
+.boxStats span {
+   color: white;
+   font-weight: bold;
+}
+
+.boxFooter {
+}
+
+.skillList {
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.skillList li {
+   margin: 0 10px 5px 0;
+   padding: 2px 5px;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #6157ff;
+   border-radius: 4px;
+   font-weight: 400;
+   cursor: pointer;
+}
+
+.skillList li:active,
+.skillList li:hover {
+   background: #6157ff;
+}
+
+.boxTheme {
+   background-color: rgb(85, 84, 84);
+   border-color: rgb(20, 20, 20);
+   border-style: solid;
+   border-radius: 8px;
+   padding: 0 10px;
+}
+
+.boxTheme h3 {
+   color: black;
+}

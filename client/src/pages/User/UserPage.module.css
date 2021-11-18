@@ -1,0 +1,20 @@
+.userPage {
+   width: 55%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   color: white;
+   margin-bottom: 30px;
+}
+
+.userPage hr{
+   border: 0;
+   height: 2px;
+   width: 100%;
+   background-color: rgb(66, 66, 66);
+}
+
+.contentButtons {
+   display: inline-flex;
+   justify-content: space-between;
+}

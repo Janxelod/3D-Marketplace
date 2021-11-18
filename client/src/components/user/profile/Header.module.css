@@ -1,0 +1,28 @@
+.header {
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+   margin-bottom: 30px;
+}
+
+.profilePicture {
+   align-self: center;
+}
+
+.profilePicture img {
+   width: 100px;
+   height: 100px;
+}
+
+.userHeader {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.userNameLocation {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: baseline;
+}
