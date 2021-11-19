@@ -1,0 +1,11 @@
+
+.linkStyle {
+   text-decoration: none;
+   color: currentColor;
+}
+
+.linkStyle:hover,
+.linkStyle:active {
+   color: #f10000;
+   font-weight: bold;
+}

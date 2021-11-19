@@ -44,7 +44,6 @@
 .footer .right{
    min-width: 35px;
    display: flex;
-   align-items: center;
 }
 
 .count{
@@ -52,7 +51,7 @@
    margin-right: 5px;
 }
 
-.footer .userAvatar > img{
+.footer .left img{
    width: 15px;
    height: 15px;
    margin-right: 6px;
